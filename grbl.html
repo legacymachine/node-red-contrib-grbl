@@ -1,0 +1,27 @@
+<script type="text/javascript">
+    RED.nodes.registerType('Grbl', {
+        category: 'Grbl',
+        //color: '#a6bbcf',
+        color: 'red',
+        defaults: {
+            name: {value: ""}
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "Grbl Logo 40x60 Transparent.png",
+        label: function() {
+            return this.name || "Grbl Parser";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="Grbl">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="Grbl">
+    <p>A simple node that converts the message payloads into all lower-case characters</p>
+</script>

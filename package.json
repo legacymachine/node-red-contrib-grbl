@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "dependencies": {
+        "grbl-parser": "~/Documents/dev/GitHub/node-grbl-parser"
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/legacymachine/node-red-contrib-grbl.git"
